@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meditación Guiada</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="menu.css">
+</head>
+
+<body>
+    <a href="https://comprexweb.empretienda.com.ar/"><center><img src="img/comprex.png" height="150" width="150" alt=""></center></a> <br>
+    <nav>
+       
+        <a href="index.html">Inicio</a>
+        <a href="mi_lugar.html">Mi Lugar</a>
+        <a href="Mis_dias.html">Mis dias</a>
+        <a href="leeme.html">Leeme</a>
+        <a href="contacto.html">Contacto</a>
+    </nav>
+
+
+    <h1>Meditación Guiada</h1>
+    <div id="meditation-container">
+        <h1>
+            <center>21 DIAS DE LA ABUNDANCIA</center>
+        </h1>
+        <center>
+            <p>Descarga el dá que te toca hoy</p>
+        </center>
+    </div>
+
+
+
+    <button id="start-meditation-btn" onclick="startMeditation()">Comenzar Meditación</button>
+
+    <script>
+        function startMeditation() {
+            // Obtener el contenedor de meditación
+            var meditationContainer = document.getElementById("meditation-container");
+
+            // Agregar el contenido al contenedor
+            meditationContainer.innerHTML = `
+            <center> <p>Seguir lo dias segun los audios</p></center>
+
+            `;
+
+            // Puedes agregar aquí código adicional para iniciar la meditación, si es necesario
+        }
+    </script>
+
+<br>
+<div>
+    <center>
+        <a id="start-meditation-btn" href="doc/Reto 21 días Comprex dia 1.pdf" download="Reto 21 días Comprex dia 1.pdf">día 1</a>
+        <a id="start-meditation-btn" href="doc/Reto 21 días Comprex dia 2.pdf" download="días Comprex dia 2.pdf">día 2</a>
+        <a id="start-meditation-btn" href="doc/Reto 21 días Comprex dia 3.pdf" download="días Comprex dia 3.pdf">día 3</a>
+        <a id="start-meditation-btn" href="doc/Reto 21 días Comprex dia 4.pdf" download="días Comprex dia 4.pdf">día 4</a>
+        <a id="start-meditation-btn" href="doc/Reto 21 días Comprex dia 5.pdf" download="días Comprex dia 5.pdf">día 5</a>
+        <a id="start-meditation-btn" href="doc/Reto 21 días Comprex dia 6.pdf" download="días Comprex dia 6.pdf">día 6</a><br><br><br>
+        <a id="start-meditation-btn" href="doc/Reto 21 días Comprex dia 7.pdf" download="días Comprex dia 7.pdf">día 7</a>
+        <a id="start-meditation-btn" href="doc/Reto 21 días Comprex dia 8.pdf" download="días Comprex dia 8.pdf">día 8</a>
+        <a id="start-meditation-btn" href="doc/Reto 21 días Comprex dia 9.pdf" download="días Comprex dia 9.pdf">día 9</a>
+        <a id="start-meditation-btn" href="doc/Reto 21 días Comprex dia 10.pdf" download="días Comprex dia 10.pdf">día 10</a>
+    </center>
+    <br>
+</div>
+
+</body>
+
+</html>

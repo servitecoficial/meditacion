@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meditación Guiada</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="menu.css">
+</head>
+
+<body>
+    <a href="https://comprexweb.empretienda.com.ar/"><center><img src="img/comprex.png" height="150" width="150" alt=""></center></a> <br>
+    <nav>
+       
+        <a href="index.html">Inicio</a>
+        <a href="mi_lugar.html">Mi Lugar</a>
+        <a href="leeme.html">Leeme</a>
+        <a href="#">Contacto</a>
+    </nav>
+
+
+    <h1>Meditación Guiada</h1>
+    <div id="meditation-container">
+        <h1>
+            <center>21 DIAS DE LA ABUNDANCIA</center>
+        </h1>
+        <center>
+            <p>21 meditaciones. 21 ejercicios. Cada meditación, <br> guiada por el mismo Chopra y con traducción al español,<br>
+                dura 10 minutos. Y cada ejercicio –entre los que <br> se encuentra escribir una lista de 50 personas que nos <br>
+                han marcado, o una lista de todos los pagos mensuales <br> a realizar– dura entre 15 y 30 minutos. <br> El
+                objetivo de estos 21 días de meditación guiada <br> y ejercicios puntuales es el de modificar, aunque sea en <br>
+                parte, nuestra disposición hacia con el mundo: si <br> pensamos en abundante, y damos de manera abundante, <br>
+                también recibimos en abundancia. Si cambiamos la codicia <br> por la generosidad, se genera un círculo <br>
+                virtuoso.</p>
+        </center>
+    </div>
+    <button id="start-meditation-btn" onclick="startMeditation()">Comenzar Meditación</button>
+
+    <script>
+        function startMeditation() {
+            // Obtener el contenedor de meditación
+            var meditationContainer = document.getElementById("meditation-container");
+
+            // Agregar el contenido al contenedor
+            meditationContainer.innerHTML = `
+                <div style="text-align: center;">
+                    <iframe allowfullscreen="" frameborder="0" height="400" 
+                    mozallowfullscreen="true" src="https://archive.org/embed/21dias&amp;playlist=1" 
+                    webkitallowfullscreen="true" width="100%"></iframe>
+                    &nbsp;
+                </div>
+            `;
+
+            // Puedes agregar aquí código adicional para iniciar la meditación, si es necesario
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meditación Guiada</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="menu.css">
+</head>
+
+<body>
+    <a href="https://comprexweb.empretienda.com.ar/">
+        <center><img src="img/comprex.png" height="150" width="150" alt=""></center>
+    </a> <br>
+    <nav>
+
+        <a href="index.html">Inicio</a>
+        <a href="mi_lugar.html">Mi Lugar</a>
+        <a href="leeme.html">Leeme</a>
+        <a href="#">Contacto</a>
+    </nav>
+
+
+    <h1>Meditación Guiada</h1>
+    <div id="meditation-container">
+        <h1>
+            <center>c</center>
+        </h1>
+        <center>
+            <p>Bienvenido/a a nuestra sección de contacto dedicada a la venta de libros de autoayuda y superación
+                personal.
+
+                <br><br>Estamos comprometidos/as a proporcionarte recursos que inspiren, motiven y guíen hacia un
+                crecimiento personal significativo. Si estás interesado/a en adquirir nuestros libros, <br> o si tienes
+                alguna pregunta, no dudes en ponerte en contacto con nosotros.
+            </p>
+            <a href="https://api.whatsapp.com/send/?phone=541136042145&text=%2AEl+camino+siempre+comienza+con+un+paso%2A%0A%0AHola+tengo+inter%C3%A9s+en+los+libros+de+autoayuda.&type=phone_number&app_absent=0" id="wh"><button id="start-meditation-btn">WhatsApp</button></a> <br>.
+        </center>
+
+
+    </div>
+    <button id="start-meditation-btn" onclick="startMeditation()">Ver</button>
+
+    <script>
+        function startMeditation() {
+            // Obtener el contenedor de meditación
+            var meditationContainer = document.getElementById("meditation-container");
+
+            // Agregar el contenido al contenedor
+            meditationContainer.innerHTML = `
+            <center>Descubre tu potencial, supera desafíos y avanza hacia tu mejor versión. <br> Nuestra colección de libros está aquí para ser tu guía en este emocionante viaje. </br></br></center>
+            <center> <a href="https://api.whatsapp.com/send/?phone=541136042145&text=%2AEl+camino+siempre+comienza+con+un+paso%2A%0A%0AHola+tengo+inter%C3%A9s+en+los+libros+de+autoayuda.&type=phone_number&app_absent=0"
+    id="wh"><button id="start-meditation-btn">WhatsApp</button></a> <br>.</center>`;
+
+            // Puedes agregar aquí código adicional para iniciar la meditación, si es necesario
+        }
+    </script>
+</body>
+
+</html>
